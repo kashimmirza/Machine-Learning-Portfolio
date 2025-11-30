@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "awesome-agent-api"
+version = "0.1.0"
+description = "AgentPay API with MNEE integration"
+authors = ["AgentPay Team"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+fastapi = "^0.109.0"
+uvicorn = "^0.27.0"
+pydantic = "^2.6.0"
+pydantic-settings = "^2.1.0"
+sqlalchemy = "^2.0.25"
+alembic = "^1.13.1"
+psycopg2-binary = "^2.9.9"
+web3 = "^6.15.0"
+python-dotenv = "^1.0.1"
+httpx = "^0.26.0"
+langchain = "^0.1.0"
+openai = "^1.10.0"
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.0.0"
+black = "^24.1.0"
+isort = "^5.13.0"
+mypy = "^1.8.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
