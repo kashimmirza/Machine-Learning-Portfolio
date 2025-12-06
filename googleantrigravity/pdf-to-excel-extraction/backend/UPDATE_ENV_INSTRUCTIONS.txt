@@ -1,0 +1,17 @@
+INSTRUCTIONS FOR UPDATING .env FILE
+====================================
+
+Please update your .env file with the following Gemini API key:
+
+GEMINI_API_KEY=AIzaSyBHGTsWdopPuzmbjNV-WRJP8Cr44rupJjQ
+GEMINI_MODEL=gemini-1.5-flash
+
+The .env file is located at:
+d:\Machine-Learning-Portfolio\googleantrigravity\pdf-to-excel-extraction\backend\.env
+
+NOTE: The .env file is gitignored, so you need to manually update it.
+You can either:
+1. Open the .env file in a text editor and add/update these values
+2. Or copy them from the updated .env.example file and replace with actual API key
+
+After updating, restart the backend server for changes to take effect.

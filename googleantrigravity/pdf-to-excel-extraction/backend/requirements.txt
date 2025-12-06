@@ -1,0 +1,35 @@
+# Web Framework
+fastapi==0.115.0
+uvicorn[standard]==0.31.1
+python-multipart==0.0.9
+
+# AI/ML for extraction
+google-generativeai==0.8.3
+pytesseract==0.3.13
+pillow==11.0.0
+
+# PDF Processing
+pdfplumber==0.11.4
+pdf2image==1.17.0
+PyPDF2==3.0.1
+
+# Data Processing
+pandas==2.2.3
+openpyxl==3.1.2
+python-dateutil==2.9.0.post0
+
+# Configuration & Environment
+python-dotenv==1.0.1
+pydantic==2.9.2
+pydantic-settings==2.5.2
+
+# Async & Background Tasks
+aiofiles==24.1.0
+
+# Logging & Monitoring
+loguru==0.7.3
+
+# Testing
+pytest==8.3.3
+pytest-asyncio==0.24.0
+httpx==0.27.2
