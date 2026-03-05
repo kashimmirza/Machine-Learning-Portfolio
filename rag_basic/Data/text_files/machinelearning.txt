@@ -1,0 +1,6 @@
+ Machine Learning  Basics Machine learning is a subset of artificial intelligence (AI) that focuses on the development of algorithms and statistical models that enable computers to learn from and make predictions or decisions based on data. Instead of being explicitly programmed to perform a specific task, machine learning systems use patterns and inference to improve their performance over time.
+    type of machine learning:
+    1. Supervised Learning: Learning with labeled data
+    2. Unsupervised Learning: Learning with unlabeled data
+    3. Reinforcement Learning: Learning through rewards and penalties
+    

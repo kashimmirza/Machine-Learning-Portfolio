@@ -1,0 +1,24 @@
+User-agent: *
+Allow: /
+Crawl-delay: 1
+
+# Important pages for crawling
+Allow: /about
+Allow: /pricing
+Allow: /register
+Allow: /blog
+Allow: /resources
+Allow: /contact-us
+
+# Platform and solution pages
+Allow: /platform/
+Allow: /solutions/
+
+# Block sensitive or non-public pages
+Disallow: /api/
+Disallow: /api/*
+Disallow: /_next/
+Disallow: /static/
+
+# Sitemap location
+Sitemap: https://www.continuouscare.io/sitemap.xml

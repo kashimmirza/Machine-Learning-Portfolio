@@ -1,0 +1,2 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[4345],{4443:(e,s,t)=>{Promise.resolve().then(t.bind(t,33486))},33486:(e,s,t)=>{"use strict";t.r(s),t.d(s,{default:()=>i});var n=t(95155),r=t(12115),c=t(20063);function i(){let e=(0,c.useRouter)();return(0,r.useEffect)(()=>{e.replace("/")},[e]),(0,n.jsx)("div",{className:"flex items-center justify-center min-h-screen",children:(0,n.jsx)("div",{className:"text-lg",children:"Loading..."})})}}},e=>{e.O(0,[4121,2076,7358],()=>e(e.s=4443)),_N_E=e.O()}]);
+//# sourceMappingURL=not-found-f90daf2b301ab318.js.map

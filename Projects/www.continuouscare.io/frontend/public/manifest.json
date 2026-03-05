@@ -1,0 +1,17 @@
+{
+  "name": "ContinuousCare - Healthcare Platform",
+  "short_name": "ContinuousCare",
+  "description": "Complete healthcare platform for medical practices with AI-powered documentation, telemedicine, and practice management.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0EA5E9",
+  "orientation": "portrait-primary",
+  "icons": [],
+  "categories": [
+    "health",
+    "medical",
+    "productivity"
+  ],
+  "screenshots": []
+}

@@ -1,0 +1,98 @@
+[project]
+name = "Agentic Medical AI System"
+version = "0.1.0"
+description = "Production-grade medical AI agent for image analysis and reporting"
+readme = "README.md"
+requires-python = ">=3.13"
+
+dependencies = [
+    # --- Web framework & server ---
+    "fastapi>=0.110.0",
+    "uvicorn>=0.29.0",
+    "asgiref>=3.8.1",
+    "uvloop>=0.19.0",
+
+    # --- LangChain / LangGraph ecosystem ---
+    "langchain>=0.1.16",
+    "langchain-core>=0.1.45",
+    "langchain-openai>=0.1.3",
+    "langchain-community>=0.0.34",
+    "langgraph>=0.0.39",
+    "langgraph-checkpoint-postgres>=1.0.1",
+
+    # --- Observability & tracing ---
+    "langfuse>=3.0.0",
+    "structlog>=24.1.0",
+
+    # --- Authentication & security ---
+    "passlib[bcrypt]>=1.7.4",
+    "bcrypt>=4.1.2",
+    "python-jose[cryptography]>=3.3.0",
+    "email-validator>=2.1.1",
+
+    # --- Database & persistence ---
+    "psycopg2-binary>=2.9.9",
+    "sqlmodel>=0.0.16",
+    "supabase>=2.4.0",
+    "motor>=3.3.2",
+    "pymongo>=4.6.1",
+
+    # --- Configuration & environment ---
+    "pydantic[email]>=2.7.0",
+    "pydantic-settings>=2.2.1",
+    "python-dotenv>=1.0.1",
+
+    # --- API utilities ---
+    "python-multipart>=0.0.9",
+    "slowapi>=0.1.9",
+
+    # --- Metrics & monitoring ---
+    "prometheus-client>=0.20.0",
+    "starlette-prometheus>=0.9.0",
+
+    # --- Search & external tools ---
+    "duckduckgo-search>=5.3.0",
+
+    # --- Reliability & utilities ---
+    "tenacity>=8.2.3",
+    "tqdm>=4.66.2",
+    "colorama>=0.4.6",
+
+    # --- Memory / agent tooling ---
+    "mem0ai>=0.0.12",
+]
+
+[project.optional-dependencies]
+dev = [
+    "black",
+    "isort",
+    "flake8",
+    "ruff",
+]
+
+test = [
+    "httpx",
+    "pytest",
+    "pytest-asyncio",
+]
+
+[tool.pytest.ini_options]
+python_files = [
+    "test_*.py",
+    "*_test.py",
+    "tests.py",
+]
+asyncio_mode = "auto"
+
+[tool.black]
+line-length = 119
+exclude = "venv|migrations"
+
+[tool.isort]
+profile = "black"
+line_length = 119
+skip = ["migrations", "venv"]
+
+[tool.ruff]
+line-length = 119
+exclude = ["migrations", "*.ipynb", "venv"]

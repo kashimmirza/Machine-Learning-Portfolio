@@ -1,0 +1,28 @@
+you need to git ignor in git root here git root folder is 
+Machine-Learning-Portfolio
+in this git root folder add .gitignor
+in this gitignore
+add all file directory which you don't you the git to track 
+
+Step 1 — Go to your Git repo root
+
+Run this inside any subfolder:
+
+git rev-parse --show-toplevel
+
+
+Go to that path, for example:
+
+cd D:\Machine-Learning-Portfolio\googleantrigravity
+
+✅ Step 2 — Stage the two folders
+
+Run:
+
+git add awesome-agent-api hackathon-warmup
+
+Step 3 — Commit the changes
+git commit -m "Add awesome-agent-api and hackathon-warmup folders"
+
+Step 4 — Push to GitHub
+git push
