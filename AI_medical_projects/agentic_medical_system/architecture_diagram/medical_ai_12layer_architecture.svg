@@ -1,0 +1,303 @@
+<svg width="100%" viewBox="0 0 680 1180" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>Industry-Grade Medical AI — Full 12-Layer Architecture</title>
+<desc>Complete architecture with context engineering, prompt engineering, MCP servers, and context-aware agent decisions</desc>
+<defs>
+<marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+  <path d="M2 1L8 5L2 9" fill="none" stroke="#888" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+</marker>
+<style>
+  text { font-family: system-ui, sans-serif; }
+  .th { font-size:13px; font-weight:600; fill:#1a1a1a; }
+  .ts { font-size:11px; font-weight:400; fill:#555; }
+  .layer-teal rect.bg { fill:#e1f5ee; stroke:#1d9e75; }
+  .layer-coral rect.bg { fill:#faece7; stroke:#d85a30; }
+  .layer-purple rect.bg { fill:#eeedfe; stroke:#7f77dd; }
+  .layer-pink rect.bg { fill:#fbeaf0; stroke:#d4537e; stroke-width:1.5; }
+  .layer-amber rect.bg { fill:#faeeda; stroke:#ba7517; stroke-width:1.5; }
+  .layer-green rect.bg { fill:#eaf3de; stroke:#639922; }
+  .layer-blue rect.bg { fill:#e6f1fb; stroke:#378add; }
+  .layer-gray rect.bg { fill:#f1efe8; stroke:#888780; }
+  .layer-mcp rect.bg { fill:#e1f5ee; stroke:#0f6e56; stroke-width:1.5; }
+  /* node fills */
+  .n-teal { fill:#9fe1cb; stroke:#1d9e75; stroke-width:0.5; }
+  .n-blue { fill:#b5d4f4; stroke:#185fa5; stroke-width:0.5; }
+  .n-purple { fill:#cecbf6; stroke:#534ab7; stroke-width:0.5; }
+  .n-coral { fill:#f5c4b3; stroke:#993c1d; stroke-width:0.5; }
+  .n-amber { fill:#fac775; stroke:#854f0b; stroke-width:0.5; }
+  .n-green { fill:#c0dd97; stroke:#3b6d11; stroke-width:0.5; }
+  .n-pink { fill:#f4c0d1; stroke:#993556; stroke-width:0.5; }
+  .n-gray { fill:#d3d1c7; stroke:#5f5e5a; stroke-width:0.5; }
+  .n-mcp { fill:#5dcaa5; stroke:#0f6e56; stroke-width:0.5; }
+  .nt { font-size:12px; font-weight:600; fill:#1a1a1a; }
+  .ns { font-size:10px; font-weight:400; fill:#444; }
+  .arr-line { stroke:#888; stroke-width:0.8; fill:none; }
+  .new-badge { fill:#d4537e; }
+  .new-text { font-size:10px; fill:#fff; font-weight:600; }
+</style>
+</defs>
+
+<!-- TITLE -->
+<text class="th" x="340" y="22" text-anchor="middle" style="font-size:15px;fill:#1a1a1a">Industry-grade medical AI platform — 12 layers</text>
+
+<!-- ═══ L1 FRONTEND ═══ -->
+<g class="layer-teal">
+  <rect class="bg" x="34" y="34" width="620" height="72" rx="10" stroke-width="0.5"/>
+</g>
+<text class="th" x="44" y="54" style="fill:#085041">L1 — Frontend clients</text>
+<rect class="n-teal" x="46" y="60" width="104" height="38" rx="6"/>
+<text class="nt" x="98" y="79" text-anchor="middle" dominant-baseline="central">Flutter mobile</text>
+<rect class="n-blue" x="160" y="60" width="104" height="38" rx="6"/>
+<text class="nt" x="212" y="79" text-anchor="middle" dominant-baseline="central">React portal</text>
+<rect class="n-teal" x="274" y="60" width="116" height="38" rx="6"/>
+<text class="nt" x="332" y="79" text-anchor="middle" dominant-baseline="central">Camera / WebRTC</text>
+<rect class="n-amber" x="400" y="60" width="104" height="38" rx="6"/>
+<text class="nt" x="452" y="79" text-anchor="middle" dominant-baseline="central">IoT wearables</text>
+<rect class="n-gray" x="514" y="60" width="132" height="38" rx="6"/>
+<text class="nt" x="580" y="79" text-anchor="middle" dominant-baseline="central">MCP clients</text>
+
+<line class="arr-line" x1="340" y1="106" x2="340" y2="118" marker-end="url(#arrow)"/>
+
+<!-- ═══ L2 SECURITY ═══ -->
+<g class="layer-coral">
+  <rect class="bg" x="34" y="120" width="620" height="66" rx="10" stroke-width="0.5"/>
+</g>
+<text class="th" x="44" y="140" style="fill:#4a1b0c">L2 — Security + compliance</text>
+<rect class="n-coral" x="46" y="146" width="116" height="32" rx="5"/>
+<text class="ns" x="104" y="162" text-anchor="middle" dominant-baseline="central">input_guard.py</text>
+<rect class="n-coral" x="174" y="146" width="136" height="32" rx="5"/>
+<text class="ns" x="242" y="162" text-anchor="middle" dominant-baseline="central">HIPAA auth + RBAC</text>
+<rect class="n-coral" x="322" y="146" width="136" height="32" rx="5"/>
+<text class="ns" x="390" y="162" text-anchor="middle" dominant-baseline="central">PHI redaction</text>
+<rect class="n-coral" x="470" y="146" width="176" height="32" rx="5"/>
+<text class="ns" x="558" y="162" text-anchor="middle" dominant-baseline="central">Rate limit + audit log</text>
+
+<line class="arr-line" x1="340" y1="186" x2="340" y2="198" marker-end="url(#arrow)"/>
+
+<!-- ═══ L3 API ═══ -->
+<g class="layer-purple">
+  <rect class="bg" x="34" y="200" width="620" height="66" rx="10" stroke-width="0.5"/>
+</g>
+<text class="th" x="44" y="220" style="fill:#26215c">L3 — API gateway (FastAPI)</text>
+<rect class="n-purple" x="46" y="226" width="130" height="32" rx="5"/>
+<text class="ns" x="111" y="242" text-anchor="middle" dominant-baseline="central">REST + WebSocket</text>
+<rect class="n-purple" x="188" y="226" width="130" height="32" rx="5"/>
+<text class="ns" x="253" y="242" text-anchor="middle" dominant-baseline="central">WebRTC signalling</text>
+<rect class="n-mcp" x="330" y="226" width="136" height="32" rx="5"/>
+<text class="ns" x="398" y="242" text-anchor="middle" dominant-baseline="central">MCP server routes</text>
+<rect class="n-amber" x="478" y="226" width="168" height="32" rx="5"/>
+<text class="ns" x="562" y="242" text-anchor="middle" dominant-baseline="central">Celery async tasks</text>
+
+<line class="arr-line" x1="340" y1="266" x2="340" y2="278" marker-end="url(#arrow)"/>
+
+<!-- ═══ L4 CONTEXT ENGINEERING ★ ═══ -->
+<g class="layer-pink">
+  <rect class="bg" x="34" y="280" width="620" height="82" rx="10"/>
+</g>
+<text class="th" x="44" y="300" style="fill:#4b1528">L4 — Context engineering</text>
+<rect class="new-badge" x="226" y="289" width="34" height="14" rx="3"/>
+<text class="new-text" x="243" y="298" text-anchor="middle" dominant-baseline="central">NEW</text>
+
+<rect class="n-pink" x="46" y="308" width="134" height="46" rx="6"/>
+<text class="nt" x="113" y="323" text-anchor="middle" dominant-baseline="central">Context window</text>
+<text class="ns" x="113" y="341" text-anchor="middle" dominant-baseline="central">Budget + trimming</text>
+
+<rect class="n-pink" x="192" y="308" width="134" height="46" rx="6"/>
+<text class="nt" x="259" y="323" text-anchor="middle" dominant-baseline="central">History compress</text>
+<text class="ns" x="259" y="341" text-anchor="middle" dominant-baseline="central">Rolling summary</text>
+
+<rect class="n-pink" x="338" y="308" width="134" height="46" rx="6"/>
+<text class="nt" x="405" y="323" text-anchor="middle" dominant-baseline="central">Selective injection</text>
+<text class="ns" x="405" y="341" text-anchor="middle" dominant-baseline="central">Relevance scoring</text>
+
+<rect class="n-pink" x="484" y="308" width="162" height="46" rx="6"/>
+<text class="nt" x="565" y="323" text-anchor="middle" dominant-baseline="central">Session state</text>
+<text class="ns" x="565" y="341" text-anchor="middle" dominant-baseline="central">Cross-turn memory</text>
+
+<line class="arr-line" x1="340" y1="362" x2="340" y2="374" marker-end="url(#arrow)"/>
+
+<!-- ═══ L5 PROMPT ENGINEERING ★ ═══ -->
+<g class="layer-amber">
+  <rect class="bg" x="34" y="376" width="620" height="82" rx="10"/>
+</g>
+<text class="th" x="44" y="396" style="fill:#412402">L5 — Prompt engineering</text>
+<rect class="new-badge" x="230" y="385" width="34" height="14" rx="3"/>
+<text class="new-text" x="247" y="394" text-anchor="middle" dominant-baseline="central">NEW</text>
+
+<rect class="n-amber" x="46" y="404" width="128" height="46" rx="6"/>
+<text class="nt" x="110" y="419" text-anchor="middle" dominant-baseline="central">Versioned prompts</text>
+<text class="ns" x="110" y="437" text-anchor="middle" dominant-baseline="central">A/B tested registry</text>
+
+<rect class="n-amber" x="186" y="404" width="128" height="46" rx="6"/>
+<text class="nt" x="250" y="419" text-anchor="middle" dominant-baseline="central">Few-shot examples</text>
+<text class="ns" x="250" y="437" text-anchor="middle" dominant-baseline="central">Per-intent library</text>
+
+<rect class="n-amber" x="326" y="404" width="128" height="46" rx="6"/>
+<text class="nt" x="390" y="419" text-anchor="middle" dominant-baseline="central">Chain-of-thought</text>
+<text class="ns" x="390" y="437" text-anchor="middle" dominant-baseline="central">Clinical reasoning</text>
+
+<rect class="n-amber" x="466" y="404" width="180" height="46" rx="6"/>
+<text class="nt" x="556" y="419" text-anchor="middle" dominant-baseline="central">Output constraints</text>
+<text class="ns" x="556" y="437" text-anchor="middle" dominant-baseline="central">JSON schema + citations</text>
+
+<line class="arr-line" x1="340" y1="458" x2="340" y2="470" marker-end="url(#arrow)"/>
+
+<!-- ═══ L6 MCP SERVERS ★ ═══ -->
+<g class="layer-mcp">
+  <rect class="bg" x="34" y="472" width="620" height="82" rx="10"/>
+</g>
+<text class="th" x="44" y="492" style="fill:#04342c">L6 — MCP servers (tool ecosystem)</text>
+<rect class="new-badge" x="288" y="481" width="34" height="14" rx="3"/>
+<text class="new-text" x="305" y="490" text-anchor="middle" dominant-baseline="central">NEW</text>
+
+<rect class="n-mcp" x="46" y="500" width="110" height="46" rx="6"/>
+<text class="nt" x="101" y="515" text-anchor="middle" dominant-baseline="central">EHR server</text>
+<text class="ns" x="101" y="533" text-anchor="middle" dominant-baseline="central">FHIR / HL7</text>
+
+<rect class="n-mcp" x="168" y="500" width="110" height="46" rx="6"/>
+<text class="nt" x="223" y="515" text-anchor="middle" dominant-baseline="central">DICOM server</text>
+<text class="ns" x="223" y="533" text-anchor="middle" dominant-baseline="central">Imaging tools</text>
+
+<rect class="n-mcp" x="290" y="500" width="110" height="46" rx="6"/>
+<text class="nt" x="345" y="515" text-anchor="middle" dominant-baseline="central">PubMed server</text>
+<text class="ns" x="345" y="533" text-anchor="middle" dominant-baseline="central">Evidence retrieval</text>
+
+<rect class="n-mcp" x="412" y="500" width="110" height="46" rx="6"/>
+<text class="nt" x="467" y="515" text-anchor="middle" dominant-baseline="central">Pharmacy server</text>
+<text class="ns" x="467" y="533" text-anchor="middle" dominant-baseline="central">Drug interactions</text>
+
+<rect class="n-gray" x="534" y="500" width="112" height="46" rx="6"/>
+<text class="nt" x="590" y="515" text-anchor="middle" dominant-baseline="central">Device server</text>
+<text class="ns" x="590" y="533" text-anchor="middle" dominant-baseline="central">Vitals stream</text>
+
+<line class="arr-line" x1="340" y1="554" x2="340" y2="566" marker-end="url(#arrow)"/>
+
+<!-- ═══ L7 SERVICES / LANGGRAPH ═══ -->
+<g class="layer-blue">
+  <rect class="bg" x="34" y="568" width="620" height="72" rx="10" stroke-width="0.5"/>
+</g>
+<text class="th" x="44" y="588" style="fill:#042c53">L7 — Core services (LangGraph orchestration)</text>
+<rect class="n-blue" x="46" y="596" width="114" height="36" rx="5"/>
+<text class="nt" x="103" y="612" text-anchor="middle" dominant-baseline="central">rag_pipeline</text>
+<text class="ns" x="103" y="626" text-anchor="middle" dominant-baseline="central">Hybrid + rerank</text>
+<rect class="n-blue" x="172" y="596" width="114" height="36" rx="5"/>
+<text class="nt" x="229" y="612" text-anchor="middle" dominant-baseline="central">semantic_cache</text>
+<text class="ns" x="229" y="626" text-anchor="middle" dominant-baseline="central">Redis TTL</text>
+<rect class="n-blue" x="298" y="596" width="114" height="36" rx="5"/>
+<text class="nt" x="355" y="612" text-anchor="middle" dominant-baseline="central">conversation</text>
+<text class="ns" x="355" y="626" text-anchor="middle" dominant-baseline="central">Window memory</text>
+<rect class="n-teal" x="424" y="596" width="114" height="36" rx="5"/>
+<text class="nt" x="481" y="612" text-anchor="middle" dominant-baseline="central">query_rewriter</text>
+<text class="ns" x="481" y="626" text-anchor="middle" dominant-baseline="central">+ router</text>
+
+<line class="arr-line" x1="340" y1="640" x2="340" y2="654" marker-end="url(#arrow)"/>
+
+<!-- ═══ L8 CONTEXT-AWARE AGENTS ★ ═══ -->
+<g class="layer-purple">
+  <rect class="bg" x="34" y="656" width="620" height="108" rx="10"/>
+</g>
+<text class="th" x="44" y="676" style="fill:#26215c">L8 — Context-aware agents (LangGraph state graph)</text>
+<rect class="new-badge" x="356" y="664" width="34" height="14" rx="3"/>
+<text class="new-text" x="373" y="673" text-anchor="middle" dominant-baseline="central">NEW</text>
+
+<rect class="n-purple" x="46" y="684" width="134" height="72" rx="6"/>
+<text class="nt" x="113" y="701" text-anchor="middle" dominant-baseline="central">Clinical agent</text>
+<text class="ns" x="113" y="717" text-anchor="middle" dominant-baseline="central">Patient history</text>
+<text class="ns" x="113" y="731" text-anchor="middle" dominant-baseline="central">+ EHR context</text>
+<text class="ns" x="113" y="747" text-anchor="middle" dominant-baseline="central">→ CoT reasoning</text>
+
+<rect class="n-purple" x="192" y="684" width="126" height="72" rx="6"/>
+<text class="nt" x="255" y="701" text-anchor="middle" dominant-baseline="central">Patient agent</text>
+<text class="ns" x="255" y="717" text-anchor="middle" dominant-baseline="central">Persona + history</text>
+<text class="ns" x="255" y="731" text-anchor="middle" dominant-baseline="central">+ language level</text>
+<text class="ns" x="255" y="747" text-anchor="middle" dominant-baseline="central">→ empathy tuned</text>
+
+<rect class="n-purple" x="330" y="684" width="126" height="72" rx="6"/>
+<text class="nt" x="393" y="701" text-anchor="middle" dominant-baseline="central">Imaging agent</text>
+<text class="ns" x="393" y="717" text-anchor="middle" dominant-baseline="central">DICOM + notes</text>
+<text class="ns" x="393" y="731" text-anchor="middle" dominant-baseline="central">+ prior scans</text>
+<text class="ns" x="393" y="747" text-anchor="middle" dominant-baseline="central">→ delta analysis</text>
+
+<rect class="n-purple" x="468" y="684" width="178" height="72" rx="6"/>
+<text class="nt" x="557" y="701" text-anchor="middle" dominant-baseline="central">Monitor agent</text>
+<text class="ns" x="557" y="717" text-anchor="middle" dominant-baseline="central">Vitals baseline</text>
+<text class="ns" x="557" y="731" text-anchor="middle" dominant-baseline="central">+ alert thresholds</text>
+<text class="ns" x="557" y="747" text-anchor="middle" dominant-baseline="central">→ early warning</text>
+
+<line class="arr-line" x1="340" y1="764" x2="340" y2="776" marker-end="url(#arrow)"/>
+
+<!-- ═══ L9 LLM ═══ -->
+<g class="layer-blue">
+  <rect class="bg" x="34" y="778" width="620" height="60" rx="10" stroke-width="0.5"/>
+</g>
+<text class="th" x="44" y="798" style="fill:#042c53">L9 — LLM layer</text>
+<rect class="n-blue" x="46" y="806" width="166" height="26" rx="5"/>
+<text class="ns" x="129" y="819" text-anchor="middle" dominant-baseline="central">Prompt registry (versioned)</text>
+<rect class="n-purple" x="224" y="806" width="166" height="26" rx="5"/>
+<text class="ns" x="307" y="819" text-anchor="middle" dominant-baseline="central">LLM router (Claude / GPT)</text>
+<rect class="n-teal" x="402" y="806" width="166" height="26" rx="5"/>
+<text class="ns" x="485" y="819" text-anchor="middle" dominant-baseline="central">Agent tools (pluggable)</text>
+
+<line class="arr-line" x1="340" y1="838" x2="340" y2="850" marker-end="url(#arrow)"/>
+
+<!-- ═══ L10 DATA ═══ -->
+<g class="layer-green">
+  <rect class="bg" x="34" y="852" width="620" height="60" rx="10" stroke-width="0.5"/>
+</g>
+<text class="th" x="44" y="872" style="fill:#173404">L10 — Data storage</text>
+<rect class="n-green" x="46" y="880" width="112" height="26" rx="5"/>
+<text class="ns" x="102" y="893" text-anchor="middle" dominant-baseline="central">MongoDB (records)</text>
+<rect class="n-green" x="170" y="880" width="126" height="26" rx="5"/>
+<text class="ns" x="233" y="893" text-anchor="middle" dominant-baseline="central">PostgreSQL (structured)</text>
+<rect class="n-teal" x="308" y="880" width="126" height="26" rx="5"/>
+<text class="ns" x="371" y="893" text-anchor="middle" dominant-baseline="central">Qdrant (embeddings)</text>
+<rect class="n-amber" x="446" y="880" width="96" height="26" rx="5"/>
+<text class="ns" x="494" y="893" text-anchor="middle" dominant-baseline="central">Redis (cache)</text>
+<rect class="n-gray" x="554" y="880" width="96" height="26" rx="5"/>
+<text class="ns" x="602" y="893" text-anchor="middle" dominant-baseline="central">S3 (DICOM)</text>
+
+<line class="arr-line" x1="340" y1="912" x2="340" y2="924" marker-end="url(#arrow)"/>
+
+<!-- ═══ L11 EVALUATION ═══ -->
+<g class="layer-coral">
+  <rect class="bg" x="34" y="926" width="620" height="60" rx="10" stroke-width="0.5"/>
+</g>
+<text class="th" x="44" y="946" style="fill:#4a1b0c">L11 — Evaluation + observability</text>
+<rect class="n-coral" x="46" y="954" width="134" height="26" rx="5"/>
+<text class="ns" x="113" y="967" text-anchor="middle" dominant-baseline="central">Golden dataset eval</text>
+<rect class="n-coral" x="192" y="954" width="134" height="26" rx="5"/>
+<text class="ns" x="259" y="967" text-anchor="middle" dominant-baseline="central">Online monitor</text>
+<rect class="n-pink" x="338" y="954" width="134" height="26" rx="5"/>
+<text class="ns" x="405" y="967" text-anchor="middle" dominant-baseline="central">LangSmith tracer</text>
+<rect class="n-pink" x="484" y="954" width="162" height="26" rx="5"/>
+<text class="ns" x="565" y="967" text-anchor="middle" dominant-baseline="central">Cost tracker + alerts</text>
+
+<line class="arr-line" x1="340" y1="986" x2="340" y2="998" marker-end="url(#arrow)"/>
+
+<!-- ═══ L12 INFRA ═══ -->
+<g class="layer-gray">
+  <rect class="bg" x="34" y="1000" width="620" height="60" rx="10" stroke-width="0.5"/>
+</g>
+<text class="th" x="44" y="1020" style="fill:#2c2c2a">L12 — Infrastructure + DevOps</text>
+<rect class="n-gray" x="46" y="1028" width="114" height="26" rx="5"/>
+<text class="ns" x="103" y="1041" text-anchor="middle" dominant-baseline="central">Docker Compose</text>
+<rect class="n-gray" x="172" y="1028" width="128" height="26" rx="5"/>
+<text class="ns" x="236" y="1041" text-anchor="middle" dominant-baseline="central">GitHub Actions CI/CD</text>
+<rect class="n-gray" x="312" y="1028" width="128" height="26" rx="5"/>
+<text class="ns" x="376" y="1041" text-anchor="middle" dominant-baseline="central">.claude/ agent rules</text>
+<rect class="n-teal" x="452" y="1028" width="114" height="26" rx="5"/>
+<text class="ns" x="509" y="1041" text-anchor="middle" dominant-baseline="central">K8s / ECS deploy</text>
+<rect class="n-amber" x="578" y="1028" width="72" height="26" rx="5"/>
+<text class="ns" x="614" y="1041" text-anchor="middle" dominant-baseline="central">scripts/</text>
+
+<!-- ═══ LEGEND ═══ -->
+<rect x="34" y="1076" width="620" height="94" rx="8" fill="#f8f8f5" stroke="#ccc" stroke-width="0.5"/>
+<text class="th" x="44" y="1096" style="fill:#1a1a1a">New layers added (marked NEW)</text>
+<rect x="46" y="1104" width="10" height="10" rx="2" fill="#f4c0d1" stroke="#993556"/>
+<text class="ns" x="62" y="1113">L4 Context engineering — window budget, history compression, selective patient data injection, cross-turn session state</text>
+<rect x="46" y="1120" width="10" height="10" rx="2" fill="#fac775" stroke="#854f0b"/>
+<text class="ns" x="62" y="1129">L5 Prompt engineering — versioned prompt registry, few-shot clinical examples, chain-of-thought, output schema constraints</text>
+<rect x="46" y="1136" width="10" height="10" rx="2" fill="#5dcaa5" stroke="#0f6e56"/>
+<text class="ns" x="62" y="1145">L6 MCP servers — EHR (FHIR), DICOM imaging, PubMed evidence, pharmacy drug interaction, wearable device tool servers</text>
+<rect x="46" y="1152" width="10" height="10" rx="2" fill="#cecbf6" stroke="#534ab7"/>
+<text class="ns" x="62" y="1161">L8 Context-aware agents — each agent injects patient-specific context (history, baselines, prior scans) before every LLM call</text>
+</svg>
